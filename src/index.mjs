@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import { ROLE_IDS, AGENT_ROLES_DEFAULT_MODEL, emptyDocument, applyAssignment, resolveFromDocument } from '@x12i/role-models';
+const role = ROLE_IDS[0];
+const model = AGENT_ROLES_DEFAULT_MODEL;
+const document = applyAssignment(emptyDocument('fixture-agent'), { scope: 'agent', agentId: 'fixture-agent', roles: { [role]: { mode: 'model', model } } });
+const resolved = resolveFromDocument(document, { role, agentId: 'fixture-agent' }, { materialize: false, explain: true });
+assert.equal(resolved.choice.model, model);
+assert.equal(resolved.layer, 'agent');
+assert.equal(resolved.call, null);
+console.log({ role, choice: resolved.choice, layer: resolved.layer, trace: resolved.trace });

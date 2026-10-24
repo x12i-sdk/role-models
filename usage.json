@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "package": "@x12i/role-models",
+  "packageVersion": "1.0.0",
+  "npmUrl": "https://www.npmjs.com/package/@x12i/role-models",
+  "usageRepository": "https://github.com/x12i-sdk/role-models",
+  "sourceRepository": null,
+  "sourceCommit": null,
+  "sourcePackageDirectory": null,
+  "example": {
+    "title": "Read a historical role-model assignment through the re-exported API",
+    "entrypoint": "src/index.mjs",
+    "command": "npm start",
+    "requiresCredentials": false,
+    "validation": "passed",
+    "validatedAt": "2026-10-24T14:36:42.701512+00:00",
+    "isolatedInstallation": true,
+    "sourceSha256": "95a67ae3f2371ea332f2fbc848d861a5e1fc058bc0b7868da79ec9abba545b3b",
+    "manifestSha256": "cd5e94314a1b7545641b7a9c6bbcc68a7c90d65814dcd4b3b662556905373799"
+  },
+  "validationFiles": {
+    "src/index.mjs": "95a67ae3f2371ea332f2fbc848d861a5e1fc058bc0b7868da79ec9abba545b3b"
+  }
+}
